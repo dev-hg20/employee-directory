@@ -1,29 +1,29 @@
 [
   {
     "id": 1,
-    "name": "SpongeBob",
+    "name": "Derek Huang",
     "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
-    "title": "Fry Cook",
-    "startdate": "25/01/1952",
+    "title": "Engineer",
+    "startdate": "25/01/2000",
     "telephone": "9874 5612",
-    "email": "pineapple_bob@gmail.com"
+    "email": "d_huang@work.com"
   },
   {
     "id": 2,
-    "name": "SpongeBob",
+    "name": "Haylie Goh",
     "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
-    "title": "Fry Cook",
-    "startdate": "25/02/1952",
+    "title": "Engineer",
+    "startdate": "28/02/2020",
     "telephone": "9874 5612",
-    "email": "pineapple_bob@gmail.com"
+    "email": "h.g@work.com"
   },
   {
     "id": 3,
-    "name": "SpongeBob",
+    "name": "Test1",
     "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
-    "title": "Fry Cook",
-    "startdate": "25/02/1952",
+    "title": "Test",
+    "startdate": "25/02/1951",
     "telephone": "9874 5612",
-    "email": "pineapple_bob@gmail.com"
+    "email": "pineapple@work.com"
   }
 ]

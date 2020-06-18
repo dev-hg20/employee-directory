@@ -16,11 +16,16 @@ function App() {
   //     console.log("render");
   //   }, [values.password]);
 
+  function handleClick(e) {
+    e.preventDefault();
+    console.log("button clicked");
+  }
+
   return (
     <Wrapper>
       <Title>Employee List</Title>
 
-      <button onClick={setStartDate}>Order by Date</button>
+      <button onClick={handleClick}>Order by Date</button>
 
       {employeeState.employees.map((employee, index) => (
         <EmployeeCard
