@@ -9,33 +9,19 @@ function App() {
     employees: employees,
   });
 
+  const [startDate, setStartDate] = React.useState({});
+  const orderDate = employeeState.employees.sort((a, b) => b.date - a.date);
+
+  //   useEffect(() => {
+  //     console.log("render");
+  //   }, [values.password]);
+
   return (
     <Wrapper>
       <Title>Employee List</Title>
-      <div class="dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Filter by Title
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">
-            Intern
-          </a>
-          <a class="dropdown-item" href="#">
-            Engineer
-          </a>
-          <a class="dropdown-item" href="#">
-            Manager
-          </a>
-        </div>
-      </div>
-      <button>Order by Date</button>
+
+      <button onClick={setStartDate}>Order by Date</button>
+
       {employeeState.employees.map((employee, index) => (
         <EmployeeCard
           key={index}

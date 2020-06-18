@@ -16,6 +16,9 @@ function FriendCard(props) {
             <strong>Title:</strong> {props.title}
           </li>
           <li>
+            <strong>Start Date:</strong> {props.startdate}
+          </li>
+          <li>
             <strong>Telephone:</strong> {props.telephone}
           </li>
           <li>
