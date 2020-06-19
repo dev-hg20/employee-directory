@@ -37,13 +37,15 @@ class App extends React.Component {
     //   const index = employee[i];
     //   console.log(index);
     //   console.log(index.title);
-    //   employee.filter((title) => index.title === e.target.innerHTML);
+    //   employee.filter((title) => index.title == e.target.innerHTML);
     //   console.log(e.target.innerHTML);
     // }
-
-    employee.filter((item) => employee.title === e.target.innerHTML);
-    console.log(employee.title);
-    this.setState({ employeeState: employee });
+    // this.setState({ employeeState: employee });
+    const filtered = employee.filter(
+      (employee) => employee.title === e.target.innerHTML
+    );
+    console.log(filtered);
+    this.setState({ employeeState: filtered });
   };
 
   render() {
@@ -52,9 +54,9 @@ class App extends React.Component {
       <Wrapper>
         <Title>Employee List</Title>
         {/* Filter cards */}
-        <div class="dropdown">
+        <div className="dropdown">
           <button
-            class="btn btn-secondary dropdown-toggle"
+            className="btn btn-secondary dropdown-toggle"
             type="button"
             id="dropdownMenuButton"
             data-toggle="dropdown"
@@ -63,12 +65,20 @@ class App extends React.Component {
           >
             Filter by Title
           </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
             {/* TODO: Figure out event value */}
-            <a class="dropdown-item" onClick={this.filterResults}>
+            <a
+              className="dropdown-item"
+              href="value"
+              onClick={this.filterResults}
+            >
               Engineer
             </a>
-            <a class="dropdown-item" onClick={this.filterResults}>
+            <a
+              className="dropdown-item"
+              href="value"
+              onClick={this.filterResults}
+            >
               Test
             </a>
           </div>
