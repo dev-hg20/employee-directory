@@ -29,11 +29,21 @@ class App extends React.Component {
 
   filterResults = (e) => {
     e.preventDefault();
-    console.log("filter working");
+    // console.log("filter working");
     const employee = this.state.employeeState;
     console.log(employee); //ARRAY of objeccts
-    console.log(typeof employee); //object
-    employee.filter((item) => item.title === e.target.label);
+
+    // for (var i = 0; i < employee.length; i++) {
+    //   const index = employee[i];
+    //   console.log(index);
+    //   console.log(index.title);
+    //   employee.filter((title) => index.title === e.target.innerHTML);
+    //   console.log(e.target.innerHTML);
+    // }
+
+    employee.filter((item) => employee.title === e.target.innerHTML);
+    console.log(employee.title);
+    this.setState({ employeeState: employee });
   };
 
   render() {
@@ -55,11 +65,7 @@ class App extends React.Component {
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             {/* TODO: Figure out event value */}
-            <a
-              label="Engineer"
-              class="dropdown-item"
-              onClick={this.filterResults}
-            >
+            <a class="dropdown-item" onClick={this.filterResults}>
               Engineer
             </a>
             <a class="dropdown-item" onClick={this.filterResults}>
