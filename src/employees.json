@@ -1,29 +1,83 @@
 [
   {
     "id": 1,
-    "name": "Derek Huang",
-    "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
+    "name": "Oskar Marin",
+    "image": "https://www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png",
     "title": "Engineer",
-    "startdate": "2000-01-25",
-    "telephone": "9874 5612",
-    "email": "d_huang@work.com"
+    "startdate": "2011-09-23",
+    "telephone": "9789 5123",
+    "email": "Oskar_Marin@work.com"
   },
   {
     "id": 2,
-    "name": "Haylie Goh",
-    "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
+    "name": "Christina Clemons",
+    "image": "https://avatarfiles.alphacoders.com/791/79102.png",
     "title": "Engineer",
-    "startdate": "2020-02-28",
-    "telephone": "9874 5612",
-    "email": "h.g@work.com"
+    "startdate": "2017-05-11",
+    "telephone": "9354 5872",
+    "email": "Chris_Clemons@work.com"
   },
   {
     "id": 3,
-    "name": "Test1",
-    "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
-    "title": "Test",
-    "startdate": "2010-02-28",
-    "telephone": "9874 5612",
-    "email": "pineapple@work.com"
+    "name": "Chloe Norris",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQnBUjU-UzzfkqtoWptfrIIIEd-CDiaYvd1-yiDq9X5RY5CAmfq&usqp=CAU",
+    "title": "Manager",
+    "startdate": "2000-09-19",
+    "telephone": "8556 2305",
+    "email": "Chloe_Norris@work.com"
+  },
+  {
+    "id": 4,
+    "name": "Larry Dominguez",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRPxjRIYT8pG0zgzKTilbko-MOv8pSnmO63M9FkOvfHoR9FvInm&usqp=CAU",
+    "title": "Intern",
+    "startdate": "2011-06-22",
+    "telephone": "9874 2634",
+    "email": "Larry_Dominguez@work.com"
+  },
+  {
+    "id": 5,
+    "name": "Trey Matthams",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJgi1PJz3dbKI9YO4l0GDD3uf2fByA6dEe9y-CAPHNsHF3NEqD&usqp=CAU",
+    "title": "Manager",
+    "startdate": "2003-02-19",
+    "telephone": "9874 8888",
+    "email": "Trey_Matthams@work.com"
+  },
+  {
+    "id": 6,
+    "name": "Gareth Cresswell",
+    "image": "https://www.freepngimg.com/thumb/facebook/62681-flat-icons-face-computer-design-avatar-icon.png",
+    "title": "Intern",
+    "startdate": "2017-01-01",
+    "telephone": "8888 5612",
+    "email": "Gareth_Cresswell@work.com"
+  },
+  {
+    "id": 7,
+    "name": "Sophie Case",
+    "image": "https://cdn2.iconfinder.com/data/icons/circle-avatars-1/128/040_girl_avatar_profile_woman_kimono_flower-512.png",
+    "title": "Intern",
+    "startdate": "2017-05-11",
+    "telephone": "9465 8695",
+    "email": "Sophie_Case@work.com"
+  },
+  {
+    "id": 8,
+    "name": "Lexi-May Melton",
+    "image": "https://cdn2.iconfinder.com/data/icons/circle-avatars-1/128/048_girl_avatar_profile_woman_waiter_butler-512.png",
+    "title": "Engineer",
+    "startdate": "2012-09-15",
+    "telephone": "8923 2571",
+    "email": "Lexi_Melton@work.com"
+  },
+  {
+    "id": 9,
+    "name": "Myka Cassandra",
+    "image": "https://cdn2.iconfinder.com/data/icons/circle-avatars-1/128/039_girl_avatar_profile_woman_headband-512.png",
+    "title": "Manager",
+    "startdate": "2000-09-15",
+    "telephone": "9823 5171",
+    "email": "Myka_Cassandra@work.com"
   }
 ]

@@ -13,10 +13,11 @@
   height: 60%;
   overflow: hidden;
   text-align: center;
-  background:#6CADDC;
+  background: white;
 }
 .card > .img-container > img {
-  width: 60%
+  padding: 2%;
+  width: 35%;
 }
 
 .card > .content {

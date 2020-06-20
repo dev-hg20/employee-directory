@@ -3,13 +3,13 @@ import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import EmployeeCard from "./components/EmployeeCard";
 import employeesJSON from "./employees.json";
+import "./App.css";
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
       employeeState: employeesJSON,
-      filterState: employeesJSON,
     };
   }
 
@@ -28,11 +28,6 @@ class App extends React.Component {
     this.setState({ employeeState: employee });
   };
 
-  //   filterReset = () => {
-  //     const employee = this.state.filterState;
-  //     this.setState({ employee });
-  //   };
-
   filterResults = (e) => {
     e.preventDefault();
     const filtered = employeesJSON.filter(
@@ -47,38 +42,41 @@ class App extends React.Component {
     return (
       <Wrapper>
         <Title>Employee List</Title>
-        {/* Filter cards */}
-        <div className="dropdown">
-          <button
-            className="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Filter by Title
-          </button>
-          <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            {/* TODO: Figure out event value */}
-            <a
-              className="dropdown-item"
-              href="value"
-              onClick={this.filterResults}
-            >
-              Engineer
-            </a>
-            <a
-              className="dropdown-item"
-              href="value"
-              onClick={this.filterResults}
-            >
-              Test
-            </a>
-          </div>
-        </div>
         {/* Order cards */}
-        <button onClick={this.handleClick}>Order by Date</button>
+        <h2>
+          <button className="btn btn-secondary" onClick={this.handleClick}>
+            Order by Date
+          </button>
+          {/* Filter cards */}
+          <div className="dropdown">
+            <button
+              className="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Filter by Title
+            </button>
+            <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a
+                className="dropdown-item"
+                href="value"
+                onClick={this.filterResults}
+              >
+                Engineer
+              </a>
+              <a
+                className="dropdown-item"
+                href="value"
+                onClick={this.filterResults}
+              >
+                Test
+              </a>
+            </div>
+          </div>
+        </h2>
         {/* Render cards */}
         {employeeState.map((employee, index) => {
           return <EmployeeCard key={index} emp={employee} />;
