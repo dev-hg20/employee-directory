@@ -72,7 +72,14 @@ class App extends React.Component {
                 href="value"
                 onClick={this.filterResults}
               >
-                Test
+                Manager
+              </a>
+              <a
+                className="dropdown-item"
+                href="value"
+                onClick={this.filterResults}
+              >
+                Intern
               </a>
             </div>
           </div>
