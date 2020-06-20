@@ -9,6 +9,7 @@ class App extends React.Component {
     super();
     this.state = {
       employeeState: employeesJSON,
+      filterState: employeesJSON,
     };
   }
 
@@ -27,21 +28,14 @@ class App extends React.Component {
     this.setState({ employeeState: employee });
   };
 
+  //   filterReset = () => {
+  //     const employee = this.state.filterState;
+  //     this.setState({ employee });
+  //   };
+
   filterResults = (e) => {
     e.preventDefault();
-    // console.log("filter working");
-    const employee = this.state.employeeState;
-    console.log(employee); //ARRAY of objeccts
-
-    // for (var i = 0; i < employee.length; i++) {
-    //   const index = employee[i];
-    //   console.log(index);
-    //   console.log(index.title);
-    //   employee.filter((title) => index.title == e.target.innerHTML);
-    //   console.log(e.target.innerHTML);
-    // }
-    // this.setState({ employeeState: employee });
-    const filtered = employee.filter(
+    const filtered = employeesJSON.filter(
       (employee) => employee.title === e.target.innerHTML
     );
     console.log(filtered);
