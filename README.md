@@ -6,7 +6,7 @@ This is an application highlights an employee directory with React. This applica
 
 ## Deployment
 
-This application has been deployed here: https://dev-hg20.github.io/employee-directory/
+This application has been deployed here: https://nameless-brook-14223.herokuapp.com/
 
 ## Application Preview
 
