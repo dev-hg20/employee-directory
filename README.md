@@ -12,4 +12,4 @@ This application has been deployed here: https://nameless-brook-14223.herokuapp.
 
 Preview of the application below:
 
-![preview-application](public\Asset\application-preview.PNG)
+![preview-application](public/Asset/application-preview.PNG)
